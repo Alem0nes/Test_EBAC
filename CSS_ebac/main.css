@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* titulo */
+body > header {
+    background-color: #ff8b94;
+    padding: 40px 0;
+    color: #000;
+    font-size: 30px;
+}
+
+/* cabecalho */
+header .container {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+/* menu lateral */ 
+header li {
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-left: 16px;
+}
+
+/* menu lateral hiperlink */
+header li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* layout dos artigos */
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article article {
+    width: 30%;
+}
+
+/* layout imagens */
+.article article img {
+    width: 100%;
+}
+
+/* design da data e hora */
+.article article time {
+    color: #464343
+}
+
+/* margem artigo*/
+.article article {
+    margin-bottom: 16px;
+}
+
+/* espacamento do subtitulo*/
+section {
+    padding: 16px 0;
+}
+
+/* chamada noticia*/
+.article article h3 {
+    margin-top: 8px;
+    margin-bottom:8px;
+    font-size: 24px;
+}
+
+/* fonte artigo */
+.article article p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* secoes */
+section h2 {
+    font-size: 35px;
+    margin-bottom: 16px;
+}
+
+/* cor da box "ler mais"*/
+#sports .article article a{
+    background-color:#c57571;
+}
+
+#economy .article article a{
+    background-color: #e7b18d;
+}
+
+#games .article article a{
+    background-color: #687a4b;
+}
+
+#book .article article a{
+    background-color: #375b4e;
+}
+
+/* botao "ler mais" */
+.article article a {
+    color: #ffffff; 
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* quando passa o mouse no box "ler mais" - underline*/
+.article article a:hover {
+    text-decoration: underline;
+}
+
+    /* Cores de fundo */
+#sports {
+    background-color: #ffaaa5;
+}
+
+#economy {
+    background-color: #ffd3b6;
+}
+
+#games {
+    background-color: #dcedc1;
+}
+
+#book {
+    background-color: #87e2c1;
+}
