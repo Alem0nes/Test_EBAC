@@ -19,9 +19,23 @@ h1 {
 .form,
 #button {
     display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
+}
+
+.mensagemSucesso{
+    margin-top: 8px;
+    width: 400px;
+    text-align: center;
+    display: none;
 }
 
 form input {
@@ -29,8 +43,10 @@ form input {
     width: 200px;
 }
 
-form button{
+form button,
+.mensagemSucesso{
     border: none;
+    color: black;
     background-color: rgb(57, 145, 135, 0.809);
     padding: 8px 20px;
     cursor: pointer;

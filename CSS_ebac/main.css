@@ -15,7 +15,7 @@ body > header {
 /* cabecalho */
 header .container {
     display: flex;
-    align-items:center;
+    align-items: end;
     justify-content: space-between;
 }
 
@@ -136,3 +136,4 @@ section h2 {
 #book {
     background-color: #87e2c1;
 }
+

@@ -7,20 +7,25 @@ const error = document.getElementById('error')
 form.addEventListener('submit',(e) => {
     e.preventDefault();
 
-    let messages = []
-
 const valueA = parseInt(campoA.value);
 const valueB = parseInt(campoB.value);
 
-if (valueA > valueB) {
-    messages.push('numero incorreto')
-} else {
-    messages.push('numero correto')
-}
+mensagemSucesso = `O número <b>${campoA.value}</b> é maior que o número <b>${campoB.value}</b>.\n Formulário enviado com sucesso!` 
+mensagemFalue = `O número <b>${campoA.value}</b> não é menor que o número <b>${campoB.value}</b>, tente novamente!`
 
-    if (messages.length > 0) {
-        error.innerText = messages.join(', ');
-    }
+if (valueA > valueB) {
+    const containerMensagemFalue = document.querySelector('.mensagemSucesso')
+    containerMensagemFalue.innerHTML = mensagemFalue
+    containerMensagemFalue.style.display = 'block'
+
+} else {
+    const containerMensagemSucesso =  document.querySelector('.mensagemSucesso')
+    containerMensagemSucesso.innerHTML = mensagemSucesso 
+    containerMensagemSucesso.style.display = 'block'
+
+    campoA.value = ' '
+    campoB.value = ' '
+}
 })
 
 
