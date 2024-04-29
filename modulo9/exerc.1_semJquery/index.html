@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de tarefas</h1>
+    </header>
+    <div class="input-task">
+        <input id="new-task" type="text" placeholder="Nome da tarefa">
+        <button id="button-submit" onclick="addtask()">Cadastrar</button>
+        <div class="to-do">
+            <ul id="list">
+            <!--<li class="checked">Estudar Ingles</li>-->
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

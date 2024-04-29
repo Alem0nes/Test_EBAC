@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(199, 128, 192) 20%, #89d692 80%);
+}
+
+.geral{
+    width: 350px;
+    height: 450px;
+    align-items: center;
+    text-align: center;
+    background:rgb(255, 255, 255, 30%);
+    border-radius: 5vh;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    overflow-y: auto;
+}
+
+#new-task, #button-submit{
+    width: 30vh;
+    height: 5vh;
+    border: none;
+    outline: none;
+    border-radius: 1.5vh;
+    background: #fff;
+    padding: 0 10px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+#button-submit {
+    width: 5vh;
+    padding: 0;
+    background: #7ae383;
+}
+
+.to-do li{
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(238, 238, 238, 0.773);
+    color:#333;
+    height: 40px;
+    border-radius: 1.5vh;
+    width: 100%;
+    margin: 10px 0px;
+    position: relative;
+}
+
+#list{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#new-task::placeholder{
+    color: #bbb;
+}
+
+ul .fa-check, .fa-trash{
+    position: absolute;
+    cursor: pointer;
+} 
+
+ul .fa-check{
+    right: 30px;
+    color: green;
+}
+ul .fa-trash{
+    right: 10px;
+    color: red;
+}
+
+ul .checked{
+    background: lightgreen;
+    text-decoration: line-through;
+    transition: .6s;
+}
