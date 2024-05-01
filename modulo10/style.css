@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: linear-gradient(45deg, rgb(164, 80, 197), rgb(122, 212, 103));
+    height: 100%;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    margin: 100px 0 30px;
+}
+
+.formulario {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.formulario label{
+    display: block;
+}
+
+.formulario input,
+.formulario textarea,
+button {
+    width: 100%;
+    padding: 5px;
+}
+
+button{
+    padding: 5px;
+    background-color: rgb(51, 169, 51);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
