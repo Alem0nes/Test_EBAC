@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 64em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    padding: 1em 0 0 ;
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+.container form button{
+    padding: 0.2rem;
+    max-width: 6em;
+}
+
+nav {
+    background-color: rgb(200, 40, 40);
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left:0;
+    width: 8em;
+    text-decoration: none;
+    background-color: #ff1301;
+    top:100%
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 1em;
+    border-top: 4px solid transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.clear {
+    clear: both
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.menu li:hover {
+    background-color: #181414;
+    color: white;
+}
+
+.submenu li {
+    display: block;
+    padding: 0.2em;
+}
+
+.submenu a{
+    text-decoration: none;
+    color: white;
+}
+
+.conteudo main{
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    background-color: #181414;
+}
+.conteudo img{
+    width: 40em;
+}
+
+.conteudo p {
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 1em;
+    color: white;
+}
+
+.livrosdestaques h2 {
+    padding: 1em;
+    background-color: #ff1301;
+    color: white;
+
+}
+
+.produtos img{
+    width: 100%;
+    height: auto;
+}
+
+.produtos{
+    background-color: #181414;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+    padding: 1em;
+    margin: 0 auto;
+    row-gap: 5%;
+    width: 100%;
+}
+
+.produtos a{
+    text-decoration: none;
+    color:white;
+}
+
+h3 {
+    margin-top: 0.5em;
+    height: 43px;
+}
+
+button{
+    width: 15em;
+    padding: 0.8em;
+    border-radius:2em;
+    margin-top: 1em;
+}
+
+button:hover{
+    color: white;
+    background-color: #ff1301;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .container{
+        max-width: 90%;
+    }
+
+    .conteudo main{
+        display: block;
+        padding: 1em;
+        justify-content: center;
+        background-color: #181414;
+    }
+    .conteudo img{
+        width: 100%;
+    }
+
+    .conteudo p {
+        margin: 1em 0 2em 0em
+    }
+
+    .produtos{
+        background-color: #181414;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1%;
+        padding: 1em;
+        margin: 0 auto;
+        row-gap: 5%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .container{
+        max-width: 90%;
+        margin: none;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    .menu > li {
+        clear: both;
+        position: relative;
+        border-top:none
+    }
+
+    .submenu {
+        background-color: #000000;
+        left:100%;
+        top:-1%;
+        width: 10em;
+        position: absolute;
+        border: none;
+    }
+    .conteudo{
+        
+    }
+    .conteudo p{
+        margin-left: 0em;
+        margin-top: 1em;
+    }
+
+    .conteudo img{
+        width: 100%;
+    }
+
+    .produtos{
+        display: block;
+    }
+
+    .produtos img {
+        margin-top: 2em;
+    }
+
+    
+}
