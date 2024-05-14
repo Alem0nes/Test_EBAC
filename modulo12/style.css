@@ -1,0 +1,18 @@
+body{
+    background-color: bisque;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    margin-top: 80px;
+}
+
+form{
+    width: 30em;
+}
+
+button{
+    margin-top: 10px;
+}
