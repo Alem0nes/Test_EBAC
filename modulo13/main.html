@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinsealy Pet Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Terceiros/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="cabeca">
+                <img id="logo" src="./Photos/Logo.png" alt="logo">
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#become-a-customer">Adopt</button>
+                <div class="modal" id="become-a-customer">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header"> 
+                                <h5>Adopt</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="form-label" for="name">Name:</label>
+                                        <input class="form-control" type="text">
+                                        <label class="form-label" for="email">E-mail:</label>
+                                        <input class="form-control" type="email">
+                                        <label class="form-label" for="cel">Phone:</label>
+                                        <input class="form-control" type="number">
+                                        <label class="form-label" for="adress">Adress:</label>
+                                        <input class="form-control" type="text">
+                                        <label class="form-label" for="postalcode">Postal Code</label>
+                                        <input class="form-control" type="number">
+                                        <label class="form-label" for="country">Country</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Send</button>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="carousel-fp" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img src="./Photos/Carousel/1.png" alt="photo of the aquarium">
+                <div class="carousel-caption">
+                    <h2>Aquariums and Fishes</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="./Photos/Carousel/2.png" alt="photo of the dog gromming">
+                <div class="carousel-caption">
+                    <h2>Grooming</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="./Photos/Carousel/3.png" alt="photo of the bearded dragon">
+                <div class="carousel-caption">
+                    <h2>Reptiles</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="./Photos/Carousel/4.png" alt="Photo of three rabbits">
+                <div class="carousel-caption">
+                    <h2>Rabbits</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-fp" data-bs-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-fp" data-bs-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="carousel-fp" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="carousel-fp" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="carousel-fp" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="carousel-fp" data-bs-slide-to="3"></button>
+        </div>
+    </div>
+    <div class="lastnews">
+        <h1>Last News</h1>
+        <div class="container">
+            <div class="row equal-height">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <img src="https://www.dspca.ie/wp-content/uploads/2024/04/Latest-News-the-shelter-animall-sos-dspca-series-4.jpg" alt="">
+                            <h5>The Shelter: Animal SOS – Series 4</h3>
+                            <p>We are super excited to let all our friends, followers and supporter know that The Shelter: Animal SOS is back with a 4th series starting Friday 19th April on RTÉ One at 8pm.
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <img src="https://www.dspca.ie/wp-content/uploads/2024/02/Latest-News-DogTraining.jpg">
+                            <h5>We Are Hiring – Dog Trainer</h3>
+                            <p>We are looking for an enthusiastic and experienced dog trainer to conduct one-on-one and group training sessions. This is a part time position, both midweek & weekends.
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <img src="https://www.dspca.ie/wp-content/uploads/2023/09/Memorialgarde_Latestnews-1.jpg" alt="">
+                            <h5>DSPCA Pet Memorial Garden Opening Friday 8th September 2023</h3>
+                            <p>Welcome to the DSPCA Pet Memorial Garden. This is a reflective, dedicated space for people who wish to honour the memory of a beloved pet who they have loved and lost. By supporting the garden, you are helping...
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <img src="https://www.dspca.ie/wp-content/uploads/2023/09/Operation-TOTO_latestNews.jpg">
+                            <h5>Operation TOTO – Traveling With Your Pet</h3>
+                            <p>The DSPCA is working with Custom Officers and An Garda Síochána at Dublin Port in a new operation to highlight the legal requirements...
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <img src="https://www.dspca.ie/wp-content/uploads/2024/02/donate-dspca-peggy.jpg" alt="">
+                            <h5>Make a Difference Today</h3>
+                            <p>Your generous donation will help us save the lives of so many animals who desperately need us.
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>DSPCA Campus, Mount Venus Road, Rathfarnham, D16 F9C4.</p>
+        </div>
+    </footer>
+    <script src="./Terceiros/bootstrap.bundle.min.js"></script>
+</body>
+</html>
