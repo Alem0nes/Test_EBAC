@@ -1,0 +1,100 @@
+
+.navbar{
+    background-color: #f2294e;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #d9cb11;
+    color:#f2294e;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+    color:#d9cb11;
+}
+
+.navbar-toggler{
+    background-color: #d91480;
+}
+
+.nav-products .nav-link.active{
+    background-color: #d9cb11;
+    color: #d91480;
+}
+
+.nav-products .nav-link:hover{
+    color: #d91480;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+#about-us{
+    background-color:  #f2a2ce;
+}
+#about-us img{
+    border: solid;
+}
+
+#products {
+    background-color: #f27b35;
+}
+
+#products button{
+    color: #d91480;
+}
+
+#products img{
+    border: solid;
+    height: 245px;
+    border-radius: 4%;
+
+}
+
+#products .col-md-3 button{
+    color:#d91480;
+    background-color: #d9cb11;
+    border: none;
+    height: 7vh;
+    width: 100%;
+}
+
+#blog{
+    background-color: #d9cb11;
+}
+
+#blog img{
+    border: solid;
+}
+
+#contact-us{
+    background-color: #d91480;
+    color: #d9cb11;
+}
+
+#contact-us button{
+    background: #d9cb11;
+    color: #d91480;
+}
+
+#contact-us h2{
+    color: black;
+}
+
+footer{
+    background-color: #f2294e;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img{
+        height: 280px;
+    }
+    
+}
