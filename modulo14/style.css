@@ -53,7 +53,7 @@
 
 #products img{
     border: solid;
-    height: 245px;
+    height: auto;
     border-radius: 4%;
 
 }
@@ -94,7 +94,36 @@ footer{
 
 @media (max-width: 767px) {
     .carousel-item img{
-        height: 280px;
+        height: 150px;
     }
-    
+
+    #about-us .col-md-7 h2{
+        margin-top: 15px;
+    }
+
+    #blog img{
+        margin-top: 20px;
+    }
+
+    #contact-us button{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1023px){
+
+    #products img{
+        height: auto;
+        width: auto
+}
+
+    #products .col-md-3 button{
+        height: 3vh;
+        width: 100%;
+}
+
+#blog img{
+    height: auto;
+    width: 200px;
+}
 }
