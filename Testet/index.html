@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Cadastro cliente</h1>
+    </div>
+    <div class="container">
+        <form>
+            <div class="formulario">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="nome">
+            </div>
+            <div class="formulario">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="tel" name="tel">
+            </div>
+            <div class="formulario">
+                <label for="Email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="formulario">
+                <label for="CPF">CPF</label>
+                <input
+                id="cpf" name="cpf">
+            </div>
+            <div class="formulario">
+                <label for="RG">RG</label>
+                <input id="rg" name="rg">
+            </div>
+            <div class="formulario">
+                <label for="endereco">Endereço</label>
+                <input id="endereco" name="endereco">
+            </div>
+            <div class="formulario">
+                <label for="cep">CEP</label>
+                <input id="cep" name="cep">
+            </div>
+            <div class="formulario">
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10">Mensagem</textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./Js/jquery.mask.min.js"></script>
+<script src="./Js/jquery.validate.min.js"></script>
+<script src="./Js/messages_pt_BR.min.js"></script>
+<script src="./main.js"></script>
+</html>
