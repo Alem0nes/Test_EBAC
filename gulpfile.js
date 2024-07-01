@@ -29,6 +29,8 @@ function comprimeJavaScript(){
         .pipe(gulp.dest('./build/scripts'))
 }
 
-exports.javascript = comprimeJavaScript;
-exports.images = comprimeImagem;
-
+exports.default = function(){
+    gulp.watch('./source/styles/main.scss',{ignoreInitial:false}, gulp.series(compilaSass))
+    gulp.watch('./source/scripts/*.js',{ignoreInitial:false}, gulp.series(comprimeJavaScript))
+    gulp.watch('./source/photos/*jpeg',{ignoreInitial:false}, gulp.series(comprimeImagem))
+}
